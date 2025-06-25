@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paquetes Turísticos - La Pandilla 22</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Misma navegación que index.html -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="assets/img/logo.png" alt="Logo" width="40" height="40" class="d-inline-block align-text-top">
+                La Pandilla 22
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="paquetes.html">Paquetes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacto.html">Contacto</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="login.html">Iniciar Sesión</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container my-5">
+        <h1 class="text-center mb-5">Nuestros Paquetes Turísticos</h1>
+        
+        <!-- Filtros -->
+        <div class="row mb-4">
+            <div class="col-md-3">
+                <select class="form-select">
+                    <option selected>Destino</option>
+                    <option>Costa Argentina</option>
+                    <option>Patagonia</option>
+                    <option>Norte Argentino</option>
+                </select>
+            </div>
+            <div class="col-md-3">
+                <select class="form-select">
+                    <option selected>Duración</option>
+                    <option>3-5 días</option>
+                    <option>6-8 días</option>
+                    <option>+8 días</option>
+                </select>
+            </div>
+            <div class="col-md-3">
+                <select class="form-select">
+                    <option selected>Precio</option>
+                    <option>Hasta $50,000</option>
+                    <option>$50,000 - $100,000</option>
+                    <option>+$100,000</option>
+                </select>
+            </div>
+            <div class="col-md-3">
+                <button class="btn btn-primary w-100">Filtrar</button>
+            </div>
+        </div>
+
+        <!-- Paquetes -->
+        <div class="row">
+            <!-- Paquete 1 -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="assets/img/destino1.jpg" class="card-img-top" alt="Bariloche">
+                    <div class="card-body">
+                        <h5 class="card-title">Bariloche Aventura</h5>
+                        <p class="card-text">
+                            <i class="fas fa-calendar"></i> 7 días / 6 noches<br>
+                            <i class="fas fa-utensils"></i> Desayuno incluido<br>
+                            <i class="fas fa-hiking"></i> Excursiones incluidas
+                        </p>
+                        <p class="card-text"><strong>Desde $150,000</strong></p>
+                        <a href="#" class="btn btn-primary w-100">Reservar</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Paquete 2 -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="assets/img/destino2.jpg" class="card-img-top" alt="Mar del Plata">
+                    <div class="card-body">
+                        <h5 class="card-title">Mar del Plata Relax</h5>
+                        <p class="card-text">
+                            <i class="fas fa-calendar"></i> 5 días / 4 noches<br>
+                            <i class="fas fa-utensils"></i> Media pensión<br>
+                            <i class="fas fa-umbrella-beach"></i> Playa privada
+                        </p>
+                        <p class="card-text"><strong>Desde $80,000</strong></p>
+                        <a href="#" class="btn btn-primary w-100">Reservar</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Paquete 3 -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="assets/img/destino3.jpg" class="card-img-top" alt="Cataratas">
+                    <div class="card-body">
+                        <h5 class="card-title">Cataratas Mágicas</h5>
+                        <p class="card-text">
+                            <i class="fas fa-calendar"></i> 4 días / 3 noches<br>
+                            <i class="fas fa-utensils"></i> All inclusive<br>
+                            <i class="fas fa-route"></i> Traslados incluidos
+                        </p>
+                        <p class="card-text"><strong>Desde $95,000</strong></p>
+                        <a href="#" class="btn btn-primary w-100">Reservar</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Más paquetes... -->
+        </div>
+    </div>
+
+    <!-- Mismo footer que index.html -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>La Pandilla 22</h5>
+                    <p>Tu agencia de viajes de confianza</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Contacto</h5>
+                    <p>
+                        <i class="fas fa-phone"></i> (11) 1234-5678<br>
+                        <i class="fas fa-envelope"></i> info@pandilla22.com<br>
+                        <i class="fas fa-map-marker-alt"></i> Buenos Aires, Argentina
+                    </p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Síguenos</h5>
+                    <a href="#" class="text-white me-3"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="text-white me-3"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="text-white"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

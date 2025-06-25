@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - La Pandilla 22</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+    <form action="includes/procesar_contacto.php" method="POST">
+</head>
+<body>
+    <!-- Navegación -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="assets/img/logo.png" alt="Logo" width="40" height="40" class="d-inline-block align-text-top">
+                La Pandilla 22
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="paquetes.html">Paquetes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="contacto.html">Contacto</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="login.html">Iniciar Sesión</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container my-5">
+        <div class="row">
+            <!-- Información de Contacto -->
+            <div class="col-md-4">
+                <h3>Información de Contacto</h3>
+                <div class="card shadow p-4 mb-4">
+                    <div class="mb-4">
+                        <i class="fas fa-map-marker-alt fa-2x text-primary mb-3"></i>
+                        <h5>Dirección</h5>
+                        <p>Av. Juan B. Justo 1234<br>Buenos Aires, Argentina</p>
+                    </div>
+                    
+                    <div class="mb-4">
+                        <i class="fas fa-phone fa-2x text-primary mb-3"></i>
+                        <h5>Teléfono</h5>
+                        <p>(11) 1234-5678</p>
+                    </div>
+                    
+                    <div class="mb-4">
+                        <i class="fas fa-envelope fa-2x text-primary mb-3"></i>
+                        <h5>Email</h5>
+                        <p>info@pandilla22.com</p>
+                    </div>
+                    
+                    <div>
+                        <i class="fas fa-clock fa-2x text-primary mb-3"></i>
+                        <h5>Horario de Atención</h5>
+                        <p>Lunes a Viernes: 9:00 - 18:00<br>
+                        Sábados: 9:00 - 13:00</p>
+                    </div>
+                </div>
+
+                <div class="card shadow p-4">
+                    <h5>Síguenos en Redes</h5>
+                    <div class="d-flex gap-3 mt-3">
+                        <a href="#" class="btn btn-primary"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="btn btn-primary"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="btn btn-primary"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Formulario de Contacto -->
+            <div class="col-md-8">
+                <h3>Envíanos un Mensaje</h3>
+                <div class="card shadow">
+                    <div class="card-body p-4">
+                        <form>
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <label for="nombre" class="form-label">Nombre</label>
+                                    <input type="text" class="form-control" id="nombre" required>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <label for="email" class="form-label">Email</label>
+                                    <input type="email" class="form-control" id="email" required>
+                                </div>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="asunto" class="form-label">Asunto</label>
+                                <input type="text" class="form-control" id="asunto" required>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="mensaje" class="form-label">Mensaje</label>
+                                <textarea class="form-control" id="mensaje" rows="5" required></textarea>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary">
+                                <i class="fas fa-paper-plane"></i> Enviar Mensaje
+                            </button>
+                        </form>
+                    </div>
+                </div>
+
+                <!-- Mapa -->
+                <div class="card shadow mt-4">
+                    <div class="card-body p-0">
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.0168878895174!2d-58.44589868477038!3d-34.60373688045943!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca099b0e0747%3A0x98e41799b612e0f6!2sAv.%20Juan%20B.%20Justo%2C%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1625678901234!5m2!1ses-419!2sar" 
+                            width="100%" 
+                            height="300" 
+                            style="border:0;" 
+                            allowfullscreen="" 
+                            loading="lazy">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>La Pandilla 22</h5>
+                    <p>Tu agencia de viajes de confianza</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Contacto</h5>
+                    <p>
+                        <i class="fas fa-phone"></i> (11) 1234-5678<br>
+                        <i class="fas fa-envelope"></i> info@pandilla22.com<br>
+                        <i class="fas fa-map-marker-alt"></i> Buenos Aires, Argentina
+                    </p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Síguenos</h5>
+                    <a href="#" class="text-white me-3"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="text-white me-3"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="text-white"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

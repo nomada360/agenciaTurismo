@@ -1,0 +1,134 @@
+:root {
+    --primary-color: #004C99;
+    --secondary-color: #FFFFFF;
+    --accent-color: #002D5A;
+    --text-color: #333333;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: var(--text-color);
+}
+
+/* Header y Navegación */
+.navbar {
+    background-color: var(--primary-color) !important;
+    padding: 1rem 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/* Sección Hero */
+.hero-section {
+    background: linear-gradient(rgba(0,76,153,0.9), rgba(0,76,153,0.9)),
+                url('../assets/img/turismo-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    color: var(--secondary-color);
+    padding: 150px 0;
+    text-align: center;
+}
+
+.hero-section h1 {
+    font-size: 3.5em;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+.hero-section p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+/* Tarjetas de Paquetes */
+.card {
+    border: none;
+    border-radius: 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-body {
+    padding: 1.5rem;
+}
+
+.card-title {
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+/* Botones */
+.btn-primary {
+    background-color: var(--primary-color);
+    border: none;
+    padding: 10px 25px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: var(--accent-color);
+}
+
+/* Footer */
+footer {
+    background-color: var(--accent-color);
+    color: var(--secondary-color);
+    padding: 3rem 0;
+    margin-top: 50px;
+}
+
+footer h5 {
+    color: var(--secondary-color);
+    margin-bottom: 1.5rem;
+}
+
+/* Formularios */
+.form-container {
+    max-width: 500px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+
+.form-control {
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 1rem;
+}
+
+/* Sección de Características */
+.features-section {
+    padding: 4rem 0;
+    background-color: #f8f9fa;
+}
+
+.feature-box {
+    text-align: center;
+    padding: 2rem;
+}
+
+.feature-box i {
+    font-size: 3rem;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
